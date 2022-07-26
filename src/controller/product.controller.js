@@ -1,5 +1,5 @@
-const db = require('../model');
-const Product = db.products;
+
+const Product = require('../model/product.model');
 
 // Find all products
 exports.findAll = async (req, res) => {

@@ -1,11 +1,16 @@
-const db = require('../model');
-const Recomendation = db.recomendations;
+
+const Recomendation = require('../model/recomendation.model');
 
 // Find all recomendations
 exports.findAll = async (req, res) => {
-    const recomendations = await Recomendation.find({});
-    if (recomendations.length === 0){
-        return res.status(400).send({ message: "No recomendations in data base yet."})
-    }
-    res.send({ results: recomendations });
+    try {
+        const recomendations = await Recomendation.find({});
+        res.status(201).json({
+            recomendations
+        })
+    } catch (error) {
+        res.status(400).json({
+            message: "No recomendations in data base yet"
+        });
+    };
 };
