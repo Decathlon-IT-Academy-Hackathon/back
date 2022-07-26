@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
-    url: "mongodb://localhost:27017/repte4"
+    url: process.env.MONGODB_URI
 };
