@@ -13,7 +13,6 @@ _Para que el proyecto funcione correctamente, se recomienda tener una serie de p
 
 _Para que el proyecto funcione correctamente tienes que habilitar las variables de entorno, para ello tienes que crear un archivo con el nombre `.env` e introducir los datos que tienes en la plantilla `.config.env`._
 
-![Demo](https://github.com/DanielEspanadero/hackathon-it-academy-backend/blob/main/docs/01.png)
 
 ## Instrucciones:
 
