@@ -21,7 +21,6 @@ db.mongoose
 
 // Routes
 app.use('/api/users', require('./src/routes/user.routes'));
-app.use('/api/jobs', require('./src/routes/job.routes'));
 
 // Error handling
 app.use((req, res, next) => {
@@ -36,7 +35,7 @@ app.use((error, req, res, next) => {
 }); 
 
 // Set and run port
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
