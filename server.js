@@ -1,6 +1,7 @@
 const express = require('express');
 const db = require('./src/model');
 const app = express();
+const {createUsers, createRecomendations, createProducts} = require('./src/libs/initial-setup');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
@@ -41,3 +42,7 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+
+createUsers();
+createRecomendations();
+createProducts();

@@ -1,7 +1,6 @@
-module.exports = mongoose => {
-    const User = mongoose.model(
-        'user',
-        mongoose.Schema(
+const {Schema, model} = require('mongoose');
+
+    const UserSchema = Schema(
             {
                 person_id: {
                     type: String,
@@ -23,7 +22,6 @@ module.exports = mongoose => {
             {
                 versionKey: false
             }
-        )
-    );
-    return User;
-};
+        );
+
+module.exports = model('User', UserSchema)
