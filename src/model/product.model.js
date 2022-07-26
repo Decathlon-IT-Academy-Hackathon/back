@@ -1,6 +1,6 @@
 module.exports = mongoose => {
-    const User = mongoose.model(
-        'user',
+    const Product = mongoose.model(
+        'product',
         mongoose.Schema(
             {
                 'modeild': {
@@ -8,36 +8,36 @@ module.exports = mongoose => {
                     required: [true, 'Modeild is required']
                 },
                 'weblabel': {
-                    type: Number,
+                    type: String,
                     required: [true, 'Weblabel is required']
                 },
                 'brand': {
-                    type: Number,
+                    type: String,
                     required: [true, 'Brand is required']
                 },
                 'catchline': {
-                    type: Number,
+                    type: String,
                     required: [true, 'Catch is required']
                 },
                 'productnature': {
-                    type: Number,
-                    required: [true, 'Modeild is required']
+                    type: String,
+                    required: [true, 'Product is required']
                 },
                 'family': {
-                    type: Number,
-                    required: [true, 'Modeild is required']
+                    type: String,
+                    required: [true, 'Family is required']
                 },
                 'Review-AverageRating': {
                     type: Number,
-                    required: [true, 'Modeild is required']
+                    required: [true, 'Average rating is required']
                 },
                 'DisplayPrice-Amount': {
                     type: Number,
-                    required: [true, 'Modeild is required']
+                    required: [true, 'Display price is required']
                 },
                 'ListPrice-Amount': {
                     type: Number,
-                    required: [true, 'Modeild is required']
+                    required: [true, 'List price is required']
                 },
             },
             {
@@ -45,5 +45,5 @@ module.exports = mongoose => {
             }
         )
     );
-    return User;
+    return Product;
 };
