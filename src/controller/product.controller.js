@@ -1,13 +1,13 @@
 const db = require('../model');
-const User = db.users;
+const Product = db.products;
 
 // Find all models
 exports.findAll = async (req, res) => {
-    const users = await User.find({});
+    const products = await Product.find({});
     if (users.length === 0){
-        return res.status(400).send({ message: "No users in data base yet."})
+        return res.status(400).send({ message: "No products in data base yet."})
     }
-    res.send(users);
+    res.send(products);
 };
 
 /* // Create model
