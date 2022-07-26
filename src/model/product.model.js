@@ -3,39 +3,39 @@ module.exports = mongoose => {
         'product',
         mongoose.Schema(
             {
-                'modeild': {
+                modeild: {
                     type: Number,
                     required: [true, 'Modeild is required']
                 },
-                'weblabel': {
+                weblabel: {
                     type: String,
                     required: [true, 'Weblabel is required']
                 },
-                'brand': {
+                brand: {
                     type: String,
                     required: [true, 'Brand is required']
                 },
-                'catchline': {
+                catchline: {
                     type: String,
                     required: [true, 'Catch is required']
                 },
-                'productnature': {
+                productnature: {
                     type: String,
                     required: [true, 'Product is required']
                 },
-                'family': {
+                family: {
                     type: String,
                     required: [true, 'Family is required']
                 },
-                'Review-AverageRating': {
+                reviewAverageRating: {
                     type: Number,
                     required: [true, 'Average rating is required']
                 },
-                'DisplayPrice-Amount': {
+                displayPriceAmount: {
                     type: Number,
                     required: [true, 'Display price is required']
                 },
-                'ListPrice-Amount': {
+                listPriceAmount: {
                     type: Number,
                     required: [true, 'List price is required']
                 },

@@ -7,7 +7,7 @@ module.exports = mongoose => {
                     type: String,
                     require: [true, 'Person Id is required']
                 },
-                conplete_name:{
+                complete_name:{
                     type: String,
                     require: [true, 'Name is required']
                 },
@@ -15,7 +15,7 @@ module.exports = mongoose => {
                     type: Number,
                     require: [true, 'Age is required']
                 },
-                adress: {
+                address: {
                     type: String,
                     require: [true, 'Adress is required']
                 }

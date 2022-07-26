@@ -5,6 +5,7 @@ const db = {};
 db.mongoose = mongoose;
 db.url = dbConfig.url;
 db.users = require('./user.model.js')(mongoose);
-db.jobs = require('./product.model.js')(mongoose);
+db.products = require('./product.model.js')(mongoose);
+db.recomendations = require('./recomendation.model.js')(mongoose);
 
 module.exports = db;
