@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eliashz/Repte4-OperacionsCRUD.git"
+    "url": "git+https://github.com/Decathlon-IT-Academy-Hackathon/back"
   },
   "keywords": [],
-  "author": "Elías Huerta",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eliashz/Repte4-OperacionsCRUD/issues"
+    "url": "https://github.com/Decathlon-IT-Academy-Hackathon/back/issues"
   },
-  "homepage": "https://github.com/eliashz/Repte4-OperacionsCRUD#readme",
+  "homepage": "https://github.com/Decathlon-IT-Academy-Hackathon/back#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
